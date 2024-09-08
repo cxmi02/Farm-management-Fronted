@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory } from 'vue-router'; // Importar createRouter y createWebHistory
+import { createRouter, createWebHistory } from 'vue-router';
 
-import AnimalManagement from '@/view/AnimalManagement.vue'; // Asegúrate de que el nombre del archivo sea correcto
+import AnimalManagement from '@/view/AnimalView.vue';
 
 const routes = [
   {
@@ -8,11 +8,11 @@ const routes = [
     name: 'AnimalManagement',
     component: AnimalManagement,
   },
-  // Agrega otras rutas aquí
+
 ];
 
 const router = createRouter({
-  history: createWebHistory(), // Usar createWebHistory para la historia
+  history: createWebHistory(),
   routes,
 });
 
